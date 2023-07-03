@@ -7,6 +7,8 @@ import Instruction3 from './Components/Instruction3'
 import Login from './Components/Login'
 import Profile from './Components/Profile'
 import Password from './Components/Password'
+import Academicsyllabus from './Components/Academicsyllabus'
+import Test from './Components/Test'
 
 const App = () => {
   return (
@@ -15,9 +17,12 @@ const App = () => {
    {/* <Instruction/> */}
    {/* <Instruction2/> */}
    {/* <Instruction3/> */}
+   <Academicsyllabus/>
    {/* <Login/> */}
    {/* <Profile/> */}
-   <Password/>
+   {/* <Password/> */}
+   {/* <Test/> */}
+   
    </>
   )
 }
