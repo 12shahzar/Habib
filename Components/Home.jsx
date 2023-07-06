@@ -1,7 +1,6 @@
 import {ScrollView, StyleSheet, Text, View, Image,TouchableWithoutFeedback,DrawerLayoutAndroid, TouchableOpacity} from 'react-native';
 import  React, { useState }from 'react';
 import Footer from './Footer';
-import Header from './Header';
 import Sidebar from './Sidebar';
 
 

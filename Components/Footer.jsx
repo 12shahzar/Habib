@@ -1,3 +1,5 @@
+
+
 import {StyleSheet, Text, View ,Image,TouchableOpacity} from 'react-native';
 import React from 'react';
 import Sidebar from './Sidebar';
@@ -5,7 +7,7 @@ import Home from './Home';
 
 export default function Footer() {
   return (
-    <>
+    <View>
   
     <View style={styles.footer}>
       <TouchableOpacity style={styles.options}>
@@ -21,7 +23,8 @@ export default function Footer() {
         <Image source={require('../assets/profile.png')} />
       </TouchableOpacity>
     </View>
-    </>
+    </View>
+
   );
 }
 
@@ -46,4 +49,8 @@ const styles = StyleSheet.create({
     alignItems:'center'
 
   },
+ 
 });
+
+
+

@@ -25,7 +25,7 @@ import LeaveForm from './Components/LeaveForm'
 
 const App = () => {
   return (
-   <>
+   <View>
    {/* <Helloscreen/> */}
    {/* <Instruction/> */}
    {/* <Instruction2/> */}
@@ -48,7 +48,7 @@ const App = () => {
    
 
     
-   </>
+   </View>
   )
 }
 
