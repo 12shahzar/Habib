@@ -15,6 +15,7 @@ import Sidebar from './Components/Sidebar'
 // import Footer from './Components/Footer'
 import Home from './Components/Home'
 import Leaveapplication from './Components/Leaveapplication'
+import LeaveForm from './Components/LeaveForm'
 
 // import Dropdown from './Components/Dropdown'
 
@@ -41,8 +42,9 @@ const App = () => {
    {/* <Home/> */}
    {/* <Dropdown/> */}
 
- 
-      <Leaveapplication/>
+{/*  
+      <Leaveapplication/> */}
+      <LeaveForm/>
    
 
     
