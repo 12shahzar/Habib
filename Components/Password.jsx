@@ -1,26 +1,17 @@
-import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    Image,
-    ImageBackground,
-    TextInput,
-  } from 'react-native';
+import { TextInput,StyleSheet,Image, KeyboardAvoidingView, View,Text,TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const Password = () => {
+export default function Password() {
   return (
-    <View style={styles.container}>
-      <View style={styles.upperprofile}>
-        <View style={styles.subupperprofile}>
-          <TouchableOpacity style={styles.preButton}>
+    <KeyboardAvoidingView style={styles.container} behavior="position" keyboardVerticalOffset={0}>
+    <View style={styles.header}>
+    <TouchableOpacity style={styles.preButton}>
             <Image
               source={require('../assets/backarrow.png')}
               style={styles.preIcon}
             />
           </TouchableOpacity>
-          <Text style={styles.text}>Password</Text>
+          <Text style={styles.text}>Passowrd</Text>
 
           <TouchableOpacity style={styles.preButton}>
             <Image
@@ -28,71 +19,105 @@ const Password = () => {
               style={styles.queIcon}
             />
           </TouchableOpacity>
-        </View>
-       
-       
-      </View>
-<View  style={styles.lowerprofile}> 
-
-</View>
-      
     </View>
+ 
+ <View style={styles.paswordCon}>
+<Text  style={styles.headpas}>Change Password</Text>
+<Text  style={styles.paslabel}>Old Password</Text>
+<TextInput
+          style={styles.input}
+          placeholder="Password"
+          placeholderTextColor="#AE2327"
+        />
+        <Text  style={styles.paslabel}>New Password</Text>
+<TextInput
+          style={styles.input}
+          placeholder="Password"
+          placeholderTextColor="#AE2327"
+        />
+        <Text  style={styles.paslabel}>Confirm Password</Text>
+<TextInput
+          style={styles.input}
+          placeholder="Confirm Password"
+          placeholderTextColor="#AE2327"
+        />
+ </View>
+ <TouchableOpacity style={styles.inputbtn}>
+        <Text style={styles.btntextlog}>Change</Text>
+      </TouchableOpacity>
+
+  </KeyboardAvoidingView>
   )
 }
 
-export default Password
-
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'space-between',
-        
+  container: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 1,
     
-      },
-      upperprofile: {
-        flex: 0.1,
-        backgroundColor: '#AE2327',
-        borderBottomLeftRadius: 35,
-        borderBottomRightRadius: 35,
-      
-      },
-      subupperprofile: {
-        height: 50,
-        width: '95%',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        marginTop: 10,
-        display: 'flex',
-        flexDirection: 'row',
-      },
-      preButton: {
-        flexDirection: 'row',
-        alignItems: 'center',
-      },
+  },
+  header: {
+    height: 80,
+    backgroundColor: '#AE2327',
+    justifyContent: 'space-between',
+    paddingVertical: 20,
+    paddingHorizontal: 10,
+    borderBottomLeftRadius: 35,
+    borderBottomRightRadius: 35,
+    display:'flex',
+    flexDirection:'row',
+  
+  },
+  text: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 25,
+
+  },
+  paswordCon:{
+    height:'auto',
+   
+    marginTop:20,
+    width:'90%',
+    alignSelf:'center'
+
+  },
+  headpas:{
+    color: '#AE2327',
+    fontWeight: 'bold',
+    fontSize: 25,
+    marginBottom:5,
+  },
+  paslabel:
+  {
+    color: 'black',
+    marginTop:10,
+  },
+  input: {
+    width: '100%',
+    height: 40,
+    borderBottomColor: 'grey',
+    borderBottomWidth: 1,
+  },
+  inputbtn: {
+    width: '90%',
+    height: 60,
+    backgroundColor: '#AE2327',
+    borderColor: 'none',
+    borderRadius: 10,
+    marginTop: 20,
+    justifyContent: 'center',
+    alignSelf:'center',
     
-      preIcon: {
-        width: 60,
-        height: 60,
-        top: 10,
-      },
-      queIcon: {
-        width: 70,
-        height: 70,
-        top: 10,
-      },
-      text: {
-        color: 'white',
-        fontWeight: 'bold',
-        fontSize: 25,
-        
-      },
-      lowerprofile:{
-        flex: 0.8,
-        width:"90%",
-        marginLeft:"5%",
-        backgroundColor:'red'
-     
-      },
-   
-   
+  },
+  btntextlog: {
+    textAlign: 'center',
+    color: 'white',
+    fontWeight: '500',
+    fontSize: 18,
+  },
+ 
 })

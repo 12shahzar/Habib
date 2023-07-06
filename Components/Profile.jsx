@@ -6,6 +6,7 @@ import {
   Image,
   ImageBackground,
   TextInput,
+  ScrollView,
 } from 'react-native';
 import React from 'react';
 
@@ -37,45 +38,44 @@ export default function Profile() {
         </View>
         <Text style={styles.text_name}>Shahzar Raza</Text>
       </View>
-      <View style={styles.lowerprofile}>
+      <ScrollView style={styles.lowerprofile}>
         <Text style={styles.label}>Username</Text>
         <TextInput
-        style={styles.input}
-        placeholder="Emma Watson"
-        placeholderTextColor="#AE2327"
-      />
-       <Text style={styles.label}>First name</Text>
+          style={styles.input}
+          placeholder="Emma Watson"
+          placeholderTextColor="#AE2327"
+        />
+        <Text style={styles.label}>First name</Text>
         <TextInput
-        style={styles.input}
-        placeholder="Emma"
-        placeholderTextColor="#AE2327"
-      />
+          style={styles.input}
+          placeholder="Emma"
+          placeholderTextColor="#AE2327"
+        />
         <Text style={styles.label}>Last name</Text>
         <TextInput
-        style={styles.input}
-        placeholder="Watson"
-        placeholderTextColor="#AE2327"
-      />
-       <Text style={styles.label}>Date of Birth</Text>
+          style={styles.input}
+          placeholder="Watson"
+          placeholderTextColor="#AE2327"
+        />
+        <Text style={styles.label}>Date of Birth</Text>
         <TextInput
-        style={styles.input}
-        placeholder="25-25-2020"
-        placeholderTextColor="#AE2327"
-      />
-       <Text style={styles.label}>Roll No</Text>
+          style={styles.input}
+          placeholder="25-25-2020"
+          placeholderTextColor="#AE2327"
+        />
+        <Text style={styles.label}>Roll No</Text>
         <TextInput
-        style={styles.input}
-        placeholder="1125"
-        placeholderTextColor="#AE2327"
-      />
-      <Text style={styles.label}>Registration No</Text>
+          style={styles.input}
+          placeholder="1125"
+          placeholderTextColor="#AE2327"
+        />
+        <Text style={styles.label}>Registration No</Text>
         <TextInput
-        style={styles.input}
-        placeholder="123456"
-        placeholderTextColor="#AE2327"
-      />
-
-      </View>
+          style={styles.input}
+          placeholder="123456"
+          placeholderTextColor="#AE2327"
+        />
+      </ScrollView>
     </View>
   );
 }
@@ -83,21 +83,24 @@ export default function Profile() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-evenly',
-    alignContent:'center',
+    position:'absolute'
+    
 
   },
   upperprofile: {
-    flex: 0.3,
+    height: 200,
     backgroundColor: '#AE2327',
     borderBottomLeftRadius: 35,
     borderBottomRightRadius: 35,
     alignItems: 'center',
+  
+    
   },
   subupperprofile: {
     height: 50,
-    width: '95%',
+    width: '81%',
     justifyContent: 'space-between',
+   
     alignItems: 'center',
     marginTop: 10,
     display: 'flex',
@@ -132,23 +135,20 @@ const styles = StyleSheet.create({
     width: 90,
     borderRadius: 50,
   },
-  lowerprofile:{
-    flex: 0.6,
-    width:"90%",
-    marginLeft:"5%",
- 
+  lowerprofile: {
+    flex: 0.7,
+    width: '90%',
+    marginLeft: '5%',
+    marginTop: '10%',
   },
   input: {
     width: '90%',
     height: 40,
     borderBottomColor: 'grey',
-    borderBottomWidth: 1
-
-    
+    borderBottomWidth: 1,
   },
-  label:
-  {
-    color:'black',
-    marginTop:12,
-  }
+  label: {
+    color: 'black',
+    marginTop: 12,
+  },
 });

@@ -1,22 +1,30 @@
-import {StyleSheet, Text, View ,Image} from 'react-native';
+
+
+import {StyleSheet, Text, View ,Image,TouchableOpacity} from 'react-native';
 import React from 'react';
-import {Icon} from '@rneui/themed';
+import Sidebar from './Sidebar';
+import Home from './Home';
+
 export default function Footer() {
   return (
+    <View>
+  
     <View style={styles.footer}>
-      <View style={styles.options}>
+      <TouchableOpacity style={styles.options}>
         <Image source={require('../assets/home.png')} />
-      </View>
-      <View style={styles.options}>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.options}>
         <Image source={require('../assets/search.png')} />
-      </View>
-      <View style={styles.options}>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.options}>
         <Image source={require('../assets/clock.png')} />
-      </View>
-      <View style={styles.options}>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.options}>
         <Image source={require('../assets/profile.png')} />
-      </View>
+      </TouchableOpacity>
     </View>
+    </View>
+
   );
 }
 
@@ -41,4 +49,8 @@ const styles = StyleSheet.create({
     alignItems:'center'
 
   },
+ 
 });
+
+
+
