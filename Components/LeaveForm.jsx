@@ -25,7 +25,9 @@ export default function LeaveForm() {
        </TouchableOpacity>
  </View>
  <ScrollView>
-
+<Text>
+    Leave Form
+</Text>
  </ScrollView>
  </View>
   )

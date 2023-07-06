@@ -66,7 +66,7 @@ const Leaveapplication = () => {
       </View>
       <View style={styles.contentContainer}>
         {activeTab === 'Screen1' && (
-          <ScrollView style={styles.screenContainer}>
+          <View style={styles.screenContainer}>
             <View style={styles.applicationbox}>
             <Text  style={styles.titleapplication}>Sickness</Text>
             <Text style={styles.textapplication}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, provident odit quam placeat non ad?</Text>
@@ -83,10 +83,10 @@ const Leaveapplication = () => {
             <Text style={styles.dateapplication}>Jan 14 - Feb 16</Text>
            </View>
             </View>
-          </ScrollView>
+          </View>
         )}
         {activeTab === 'Screen2' && (
-          <ScrollView style={styles.screenContainer}>
+          <View style={styles.screenContainer}>
           <View style={styles.applicationbox}>
           <Text  style={styles.titleapplication}>Leave for Marry</Text>
           <Text style={styles.textapplication}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, provident odit quam placeat non ad?</Text>
@@ -103,7 +103,7 @@ const Leaveapplication = () => {
           <Text style={styles.dateapplication}>Jan 14 - Feb 16</Text>
          </View>
           </View>
-        </ScrollView>
+        </View>
         )}
       </View>
     </View>
@@ -136,6 +136,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
+    height:50
   },
   tabButton: {
     flex: 1,
