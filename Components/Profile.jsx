@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
 
   },
   upperprofile: {
-    height: 80,
+    height: 200,
     backgroundColor: '#AE2327',
     borderBottomLeftRadius: 35,
     borderBottomRightRadius: 35,

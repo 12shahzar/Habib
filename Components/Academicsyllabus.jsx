@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View,TouchableOpacity,Image, ScrollView } from 'react-native'
 import React from 'react'
+import Test from './Test'
 
 export default function Academicsyllabus() {
   return (
@@ -20,28 +21,8 @@ export default function Academicsyllabus() {
             />
           </TouchableOpacity>
       </View>
-      
-      <View style={styles.tabheader}>
-      <TouchableOpacity style={styles.tabButton}>
-           <Text style={styles.tabcontent}>Subject</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tabButtonwh}>
-           <Text style={styles.tabcontentwh}>Syllabus</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tabButtonwh}>
-           <Text style={styles.tabcontentwh}>Material</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tabButtonwh}>
-           <Text style={styles.tabcontentwh}>Assignment</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tabButtonwh}>
-           <Text style={styles.tabcontentwh}>Assignment</Text>
-          </TouchableOpacity>
-
-      </View>
-<ScrollView>
-  <Text></Text>
-</ScrollView>
+      <Test/>
+     
     </View>
   )
 }
